@@ -11,7 +11,7 @@ export default function Home() {
 			<div className="z-10 w-full items-center justify-between text-sm lg:flex">
 				<div className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-4 pt-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit">
 					<div className="flex w-full max-w-7xl items-center justify-between px-4">
-						Logo
+						DF Logo
 						<div className="flex gap-4 md:gap-6 text-sm md:text-base items-center">
 							<a href="#services" className="">
 								Services
@@ -26,9 +26,11 @@ export default function Home() {
 			</div>
 			<section className="grid grid-cols-1 md:grid-cols-2 pt-16 gap-y-8 max-w-7xl mx-auto">
 				<div className="pt-20 px-4">
-					<h1 className="font-bold text-3xl md:text-4xl grid gap-4">
+					<h1 className="font-bold text-3xl md:text-5xl grid gap-1 md:gap-4">
 						<span>Transform your body. </span>
+
 						<span>Transform your life. </span>
+
 						<span>Become the best version of yourself.</span>
 					</h1>
 					<h2 className="mt-6 text-zinc-700">
@@ -36,7 +38,13 @@ export default function Home() {
 						billionaire and his co founder Jackson is helping him achieve that goal amen.
 					</h2>
 				</div>
-				<div className="bg-contact-form bg-center bg-cover h-[70dvh] max-h-[36rem]"></div>
+				<div className="">
+					<img
+						src="/cForm.jpg"
+						alt="img"
+						className="h-[70vh] w-full object-center object-cover max-h-[36rem]"
+					/>
+				</div>
 			</section>
 			<section id="services" className="bg-zinc-50 scroll-m-20">
 				<div className="px-4 py-10 md:py-20 max-w-7xl mx-auto">
