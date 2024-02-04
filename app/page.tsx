@@ -63,7 +63,8 @@ export default function Home() {
 								<p className="text-zinc-600 mt-6 text-center">
 									Our approach extends beyond the gym, encompassing personalized nutrition,
 									lifestyle coaching, and unwavering motivation. Elevate your well-being
-									with us - it's not just a workout; it's a holistic transformation.
+									with us - it&apos;s not just a workout; it&apos;s a holistic
+									transformation.
 								</p>
 							</div>
 						</div>
@@ -72,9 +73,9 @@ export default function Home() {
 								<ClipboardIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Flexible Services</h4>
 								<p className="text-zinc-600 mt-6 text-center">
-									I get it-life can get in the way sometimes. That doesn't have to stop you
-									from reaching your goals. I offer virtual options and depending on what
-									works for you at any time.
+									I get it-life can get in the way sometimes. That doesn&apos;t have to stop
+									you from reaching your goals. I offer virtual options and depending on
+									what works for you at any time.
 								</p>
 							</div>
 						</div>
@@ -94,12 +95,12 @@ export default function Home() {
 						</div>
 						<div>
 							<p className="text-white/70 md:text-lg">
-								"I associate customer service with his brand... Like Gucci! They have some of
-								the most incredible customer service, very hands on. Whenever you're in there,
-								they cater to what you need. Brandon's that kind of guy. He'll try to figure
-								out your strengths and weaknesses and build a plan for you, test, and ask what
-								you like. Very similar to Gucci and it speaks volumes. You don't get that
-								anywhere else."
+								&quot;I associate customer service with his brand... Like Gucci! They have
+								some of the most incredible customer service, very hands on. Whenever
+								you&apos;re in there, they cater to what you need. Brandon&apos;s that kind of
+								guy. He&apos;ll try to figure out your strengths and weaknesses and build a
+								plan for you, test, and ask what you like. Very similar to Gucci and it speaks
+								volumes. You don&apos;t get that anywhere else.&quot;
 							</p>
 
 							<div className="flex items-center gap-4 mt-10 md:mt-4">
@@ -119,7 +120,7 @@ export default function Home() {
 			</section>
 			<section className="px-4 py-10 bg-zinc-100">
 				<div id="contact" className="text-4xl font-bold mx-auto">
-					<h3 className="text-center">Let's Get In Touch!</h3>
+					<h3 className="text-center">Let&apos;s Get In Touch!</h3>
 					<ContactForm className="max-w-lg mx-auto mt-10" />
 				</div>
 			</section>
