@@ -19,6 +19,9 @@ const config = {
 			},
 		},
 		extend: {
+			objectPosition: {
+				vid: "50% 19%;",
+			},
 			backgroundImage: {
 				"contact-form":
 					"linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/cForm.jpg')",

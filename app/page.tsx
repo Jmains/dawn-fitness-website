@@ -58,11 +58,30 @@ export default function Home() {
 					</h2>
 				</div>
 				<div className="">
-					<img
+					<video
+						autoPlay
+						muted
+						loop
+						id="dawnFitVideo"
+						className="h-[80vh] w-full object-cover object-vid max-h-[36rem]"
+					>
+						<source src="headerVid.mp4" type="video/mp4" />
+					</video>
+					{/* <video
+						autoPlay
+						muted
+						loop
+						id="dawnFitVideo"
+						className="h-[70vh] w-full object-contain max-h-[36rem]"
+					>
+						<source src="headerVid.mp4" type="video/mp4" />
+					</video> */}
+
+					{/* <img
 						src="/cForm.jpg"
 						alt="img"
 						className="h-[70vh] w-full object-center object-cover max-h-[36rem]"
-					/>
+					/> */}
 				</div>
 			</section>
 			<section id="services" className="bg-zinc-50 scroll-m-20">
@@ -109,39 +128,78 @@ export default function Home() {
 				</div>
 			</section>
 			<section id="testimonials" className="bg-zinc-900 scroll-m-20">
-				<div className="px-4 py-16">
+				<div className="px-4 py-16 max-w-7xl mx-auto">
 					<h3 className="text-center text-3xl font-bold text-white ">Client Testimonials</h3>
-					<div className="flex gap-8 max-w-3xl mx-auto mt-16">
-						<div className="shrink-0 hidden md:block">
-							<Image
-								src="/client1.jpg"
-								alt="Chris"
-								width={100}
-								height={100}
-								className=" rounded-lg shadow-md hidden md:block h-56 w-40 object-center object-cover"
-							/>
-						</div>
-						<div>
-							<p className="text-white/70 md:text-lg">
-								&quot;I associate customer service with his brand... Like Gucci! They have
-								some of the most incredible customer service, very hands on. Whenever
-								you&apos;re in there, they cater to what you need. Brandon&apos;s that kind of
-								guy. He&apos;ll try to figure out your strengths and weaknesses and build a
-								plan for you, test, and ask what you like. Very similar to Gucci and it speaks
-								volumes. You don&apos;t get that anywhere else.&quot;
-							</p>
-
-							<div className="flex items-center gap-4 mt-10 md:mt-4">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
+						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
+							{/* <div className="shrink-0 hidden md:block">
 								<Image
-									width={24}
-									height={24}
+									src="/mendy.png"
+									alt="Mendelson"
+									width={100}
+									height={100}
+									className=" rounded-lg shadow-md hidden md:block h-40 w-32 object-center object-cover"
+								/>
+							</div> */}
+							<div>
+								<p className="text-white/70 md:text-base">
+									&quot;Dawn Fitness has truly changed my life. Previously, I struggled with
+									wearing better clothes, often feeling that it wouldn&apos;t make a
+									difference or that sloppy attire was acceptable. However, upon starting my
+									training, I felt a renewed sense of vitality that had been missing for the
+									past two years. I began to socialize more, my confidence soared, and I
+									transitioned from wearing extra-large to large clothing sizes. With the
+									guidance and encouragement from Dawn Fitness and Brandon, I&apos;ve been
+									empowered to sculpt the person I aspire to become. Thank you, Dawn
+									Fitness!.&quot;
+								</p>
+								<div className="flex items-center gap-4 mt-10 md:mt-4">
+									<Image
+										width={24}
+										height={24}
+										src="/mendy.png"
+										alt="Mendelson"
+										className="shrink-0 rounded-full object-center object-cover shadow-md w-10 h-10 md:w-12 md:h-12"
+									/>
+									<div>
+										<p className="font-semibold text-white">Mendelson, 25</p>
+										<p className="text-white text-sm">Client for 18 months</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
+							{/* <div className="shrink-0 hidden md:block">
+								<Image
 									src="/client1.jpg"
 									alt="Chris"
-									className="shrink-0 rounded-full object-center object-cover shadow-md w-12 h-12 lg:hidden"
+									width={100}
+									height={100}
+									className=" rounded-lg shadow-md hidden md:block h-40 w-32 object-center object-cover"
 								/>
-								<div>
-									<p className="font-semibold text-white">Chris, 27</p>
-									<p className="text-white text-sm">Client for 12 months</p>
+							</div> */}
+							<div>
+								<p className="text-white/70 md:text-base">
+									&quot;I associate customer service with his brand... Like Gucci! They have
+									some of the most incredible customer service, very hands on. Whenever
+									you&apos;re in there, they cater to what you need. Brandon&apos;s that
+									kind of guy. He&apos;ll try to figure out your strengths and weaknesses
+									and build a plan for you, test, and ask what you like. Very similar to
+									Gucci and it speaks volumes. You don&apos;t get that anywhere else.&quot;
+								</p>
+
+								<div className="flex items-center gap-4 mt-10 md:mt-4">
+									<Image
+										width={24}
+										height={24}
+										src="/client1.jpg"
+										alt="Chris"
+										className="shrink-0 rounded-full object-center object-cover shadow-md w-10 h-10 md:w-12 md:h-12"
+									/>
+									<div>
+										<p className="font-semibold text-white">Chris, 37</p>
+										<p className="text-white text-sm">Client for 11 months</p>
+									</div>
 								</div>
 							</div>
 						</div>
