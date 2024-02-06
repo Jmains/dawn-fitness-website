@@ -99,8 +99,9 @@ export default function Home() {
 								<ClipboardIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Flexible Services</h4>
 								<p className="text-zinc-600 mt-6 text-center">
-									Change can be intimidating, but it doesn't have to be. We offer coaching
-									both in-person and virtually to accommodate all livestyles and schedules.
+									Change can be intimidating, but it doesn&apos;t have to be. We offer
+									coaching both in-person and virtually to accommodate all livestyles and
+									schedules.
 								</p>
 							</div>
 						</div>
