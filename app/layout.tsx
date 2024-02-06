@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -43,6 +44,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<Script
+				src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY}`}
+			/>
 			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
 				{children}
 			</body>

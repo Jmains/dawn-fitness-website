@@ -15,6 +15,7 @@ const formSchema = z.object({
 	email: z.string().email().min(1).max(50),
 	phoneNumber: z.string().optional(),
 	goals: z.string().optional(),
+	recaptchaResponse: z.string().optional(),
 });
 
 export function ContactForm({ className = "" }: { className?: string }) {
@@ -28,25 +29,36 @@ export function ContactForm({ className = "" }: { className?: string }) {
 			email: "",
 			phoneNumber: "",
 			goals: "",
+			recaptchaResponse: "",
 		},
 	});
 
 	async function onSubmit(values: z.infer<typeof formSchema>) {
-		// Do something with the form values.
-		// ✅ This will be type-safe and validated.
-		setIsSending(true);
-		try {
-			await fetch("api/send", {
-				method: "POST",
-				body: JSON.stringify(values),
-			});
-			form.reset();
-		} catch (error) {
-			console.log("Something went wrong: ", error);
-		}
-		setIsSending(false);
+		window.grecaptcha.ready(() => {
+			window.grecaptcha
+				.execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY, { action: "submit" })
+				.then(async (token: string) => {
+					/* send data to the server */
 
-		console.log(values);
+					values.recaptchaResponse = token;
+					setIsSending(true);
+					try {
+						await fetch("api/send", {
+							method: "POST",
+							body: JSON.stringify(values),
+						});
+						form.reset();
+					} catch (error) {
+						console.log("Something went wrong: ", error);
+					}
+
+					/* End of the sending data */
+				})
+				.catch((error: any) => {
+					console.log({ message: error.message });
+				});
+			setIsSending(false);
+		});
 	}
 
 	return (
