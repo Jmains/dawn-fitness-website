@@ -7,6 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "../input";
 import { Button } from "../button";
 import { Textarea } from "../textarea";
+import { useState } from "react";
 
 const formSchema = z.object({
 	firstName: z.string().min(1, { message: "Please enter your first name." }).max(50),
@@ -17,24 +18,41 @@ const formSchema = z.object({
 });
 
 export function ContactForm({ className = "" }: { className?: string }) {
+	const [isSending, setIsSending] = useState(false);
+
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
 			firstName: "",
 			lastName: "",
+			email: "",
+			phoneNumber: "",
+			goals: "",
 		},
 	});
 
-	function onSubmit(values: z.infer<typeof formSchema>) {
+	async function onSubmit(values: z.infer<typeof formSchema>) {
 		// Do something with the form values.
 		// ✅ This will be type-safe and validated.
+		setIsSending(true);
+		try {
+			await fetch("api/send", {
+				method: "POST",
+				body: JSON.stringify(values),
+			});
+			form.reset();
+		} catch (error) {
+			console.log("Something went wrong: ", error);
+		}
+		setIsSending(false);
+
 		console.log(values);
 	}
 
 	return (
 		<Form {...form}>
 			<form className={className} onSubmit={form.handleSubmit(onSubmit)}>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-0 text-black">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-0 text-black font-normal">
 					<FormField
 						name="firstName"
 						control={form.control}
@@ -105,8 +123,8 @@ export function ContactForm({ className = "" }: { className?: string }) {
 						)}
 					/>
 				</div>
-				<Button type="submit" className="mt-10">
-					Submit
+				<Button type="submit" className="mt-10" disabled={isSending}>
+					{!isSending ? "Start your fitness journey" : "Sending..."}
 				</Button>
 			</form>
 		</Form>
