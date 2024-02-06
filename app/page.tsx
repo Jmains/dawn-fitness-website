@@ -63,6 +63,7 @@ export default function Home() {
 						muted
 						loop
 						id="dawnFitVideo"
+						controls={false}
 						className="h-[80vh] w-full object-cover object-vid max-h-[36rem]"
 					>
 						<source src="headerVid.mp4" type="video/mp4" />
