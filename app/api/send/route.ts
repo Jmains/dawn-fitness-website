@@ -24,9 +24,10 @@ export async function POST(request: Request) {
 		const recaptchaRes = await fetch(verifyUrl, { method: "POST" });
 		const recaptchaJson = await recaptchaRes.json();
 
-		if (recaptchaJson?.score < 0.5) throw "robot detected";
+		if (recaptchaJson?.score < 0.5)
+			return NextResponse.json({ error: "Internal Server Error", status: 500 });
 
-		if (!recaptchaJson.success) throw "robot detected: google recaptcha api down.";
+		if (!recaptchaJson.success) return NextResponse.json({ error: "Internal Server Error", status: 500 });
 
 		const sendCustomerEmail = await resend.emails.send({
 			from: "Dawn Fitness Team<brandonnayebi@dawn.fitness>",
@@ -42,9 +43,10 @@ export async function POST(request: Request) {
 			react: BusinessEmail(res),
 		});
 
-		if (sendCustomerEmail.error || sendBusinessEmail.error) throw "send email error";
+		if (sendCustomerEmail.error || sendBusinessEmail.error)
+			return NextResponse.json({ error: "Internal Server Error", status: 500 });
 
-		return NextResponse.json({ message: "success" });
+		return NextResponse.json({ message: "success", status: 200 });
 	} catch (error) {
 		return NextResponse.json({ error });
 	}

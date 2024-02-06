@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<main>
 			<div className="z-20 w-full items-center justify-between text-sm lg:flex">
-				<div className="fixed z-10 left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-4 pt-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit">
+				<div className="fixed z-10 left-0 top-0 flex w-full justify-center bg-gradient-to-b from-zinc-200 pb-4 pt-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit">
 					<div className="flex w-full max-w-7xl items-center justify-between px-4">
 						<Link href="/">
 							<Image height={35} width={80} src="/DAWN_logo_2024.png" alt="dawnfit logo" />
@@ -73,7 +73,7 @@ export default function Home() {
 				<div className="px-4 py-10 md:py-20 max-w-7xl mx-auto">
 					<h3 className="text-center font-bold text-3xl md:text-4xl">Services</h3>
 					<div className="grid gap-8 md:grid-cols-3 mt-8">
-						<div className="p-4 py-10 border-zinc-300  shadow-md bg-gradient-to-b rounded-md from-zinc-50 to-zinc-200 border">
+						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
 							<div>
 								<ClipboardIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Personalized Plans</h4>
@@ -84,7 +84,7 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="p-4 py-10 border-zinc-300  shadow-md bg-gradient-to-b rounded-md from-zinc-50 to-zinc-200 border">
+						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
 							<div>
 								<DumbbellIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">
@@ -98,7 +98,7 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="p-4 py-10 border-zinc-300  shadow-md bg-gradient-to-b rounded-md from-zinc-50 to-zinc-200 border">
+						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
 							<div>
 								<ClockIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Flexible Services</h4>
@@ -187,7 +187,7 @@ export default function Home() {
 						<p className="text-sm  max-w-sm">
 							Dawn Fitness is based in Dallas, TX. Our team is dedicated to providing the best
 							service possible. Please let us know how we can meet your expectations through our
-							platforms below.
+							social media platforms listed.
 						</p>
 						<div className="flex items-center gap-4">
 							<a
@@ -222,8 +222,8 @@ export default function Home() {
 										fill="#000000"
 									/>
 									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
+										fillRule="evenodd"
+										clipRule="evenodd"
 										d="M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z"
 										fill="#000000"
 									/>
@@ -244,9 +244,9 @@ export default function Home() {
 									viewBox="0 0 24 24"
 								>
 									<path
-										fill-rule="evenodd"
+										fillRule="evenodd"
 										d="M22 5.9c-.7.3-1.5.5-2.4.6a4 4 0 0 0 1.8-2.2c-.8.5-1.6.8-2.6 1a4.1 4.1 0 0 0-6.7 1.2 4 4 0 0 0-.2 2.5 11.7 11.7 0 0 1-8.5-4.3 4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5a4 4 0 0 0 3.3 4 4.2 4.2 0 0 1-1.9.1 4.1 4.1 0 0 0 3.9 2.8c-1.8 1.3-4 2-6.1 1.7a11.7 11.7 0 0 0 10.7 1A11.5 11.5 0 0 0 20 8.5V8a10 10 0 0 0 2-2.1Z"
-										clip-rule="evenodd"
+										clipRule="evenodd"
 									/>
 								</svg>
 							</a>

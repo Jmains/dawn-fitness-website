@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
 			/>
 			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
 				{children}
+				<Toaster />
 			</body>
 			<GoogleAnalytics gaId="G-L424822YQS" />
 		</html>

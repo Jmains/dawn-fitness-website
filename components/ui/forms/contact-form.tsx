@@ -8,6 +8,7 @@ import { Input } from "../input";
 import { Button } from "../button";
 import { Textarea } from "../textarea";
 import { useState } from "react";
+import { useToast } from "../use-toast";
 
 const formSchema = z.object({
 	firstName: z.string().min(1, { message: "Please enter your first name." }).max(50),
@@ -19,6 +20,7 @@ const formSchema = z.object({
 });
 
 export function ContactForm({ className = "" }: { className?: string }) {
+	const { toast } = useToast();
 	const [isSending, setIsSending] = useState(false);
 
 	const form = useForm<z.infer<typeof formSchema>>({
@@ -43,20 +45,38 @@ export function ContactForm({ className = "" }: { className?: string }) {
 					values.recaptchaResponse = token;
 					setIsSending(true);
 					try {
-						await fetch("api/send", {
+						const res = await fetch("api/send", {
 							method: "POST",
 							body: JSON.stringify(values),
 						});
-						form.reset();
+
+						const data = await res.json();
+
+						if (data.status == 200) {
+							form.reset();
+							toast({
+								title: "Success! ✅",
+								description:
+									"Your message to Dawn Fitness has been sent. Thank you for your interest you!",
+							});
+						} else {
+							toast({
+								title: "Failure",
+								description: "Something went wrong. Please try again.",
+							});
+						}
 					} catch (error) {
+						toast({
+							title: "Failure",
+							description: "Something went wrong. Please try again.",
+						});
 						console.log("Something went wrong: ", error);
 					}
 					setIsSending(false);
-
 					/* End of the sending data */
 				})
 				.catch((error: any) => {
-					console.log({ message: error.message });
+					console.log({ message: error?.message });
 				});
 		});
 	}
@@ -135,7 +155,7 @@ export function ContactForm({ className = "" }: { className?: string }) {
 						)}
 					/>
 				</div>
-				<Button type="submit" className="mt-10" disabled={isSending}>
+				<Button type="submit" className="mt-10 w-48 text-left" disabled={isSending}>
 					{!isSending ? "Start your fitness journey" : "Sending..."}
 				</Button>
 			</form>
