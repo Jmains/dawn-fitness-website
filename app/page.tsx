@@ -59,9 +59,10 @@ export default function Home() {
 				</div>
 				<div className="">
 					<video
-						autoPlay
-						muted
-						loop
+						autoPlay={true}
+						muted={true}
+						loop={true}
+						playsInline={true}
 						id="dawnFitVideo"
 						controls={false}
 						className="h-[80vh] w-full object-cover object-vid max-h-[36rem]"
