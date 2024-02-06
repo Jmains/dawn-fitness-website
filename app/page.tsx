@@ -40,13 +40,11 @@ export default function Home() {
 				</div>
 			</div>
 			<section className="grid grid-cols-1 md:grid-cols-2 pt-[4.83rem] gap-y-12 max-w-7xl mx-auto">
-				<div className="pt-20 px-4">
+				<div className="pt-12 md:pt-20 px-4">
 					<h1 className="font-bold text-4xl md:text-5xl grid gap-2 md:gap-4">
 						<FadeInText word="New Dawn." delay={5} />
 						<FadeInText word="New Beginning." delay={13} />
 						<FadeInText word="New you." delay={20} />
-						{/* <span className="animate-fadeIn">New Beginning.</span>
-						<span className="animate-fadeIn">New you.</span> */}
 					</h1>
 					<h2 className="mt-12 text-zinc-700 max-w-lg">
 						<strong>Dawn</strong> is a fit-lifestyle company that coaches individuals on how to
