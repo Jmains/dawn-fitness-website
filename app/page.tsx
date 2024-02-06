@@ -106,7 +106,7 @@ export default function Home() {
 								<h4 className="text-center font-semibold text-xl mt-5">Flexible Services</h4>
 								<p className="text-zinc-600 mt-6 text-center">
 									Change can be intimidating, but it doesn&apos;t have to be. We offer
-									coaching both in-person and virtually to accommodate all livestyles and
+									coaching both in-person and virtually to accommodate all lifestyles and
 									schedules.
 								</p>
 							</div>
