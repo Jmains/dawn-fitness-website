@@ -25,7 +25,7 @@ export const CustomerEmail = ({ firstName }: CustomerEmailProps) => (
 		<Body style={main}>
 			<Container style={container}>
 				<Img
-					src={`${baseUrl}/DAWN_logo.png`}
+					src="https://www.dawn.fitness/DAWN_logo.png"
 					width="170"
 					height="50"
 					alt="Dawn Fitness Logo"

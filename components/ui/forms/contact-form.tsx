@@ -51,13 +51,13 @@ export function ContactForm({ className = "" }: { className?: string }) {
 					} catch (error) {
 						console.log("Something went wrong: ", error);
 					}
+					setIsSending(false);
 
 					/* End of the sending data */
 				})
 				.catch((error: any) => {
 					console.log({ message: error.message });
 				});
-			setIsSending(false);
 		});
 	}
 
