@@ -69,21 +69,6 @@ export default function Home() {
 					>
 						<source src="headerVid.mp4" type="video/mp4" />
 					</video>
-					{/* <video
-						autoPlay
-						muted
-						loop
-						id="dawnFitVideo"
-						className="h-[70vh] w-full object-contain max-h-[36rem]"
-					>
-						<source src="headerVid.mp4" type="video/mp4" />
-					</video> */}
-
-					{/* <img
-						src="/cForm.jpg"
-						alt="img"
-						className="h-[70vh] w-full object-center object-cover max-h-[36rem]"
-					/> */}
 				</div>
 			</section>
 			<section id="services" className="bg-zinc-50 scroll-m-20">
@@ -117,7 +102,7 @@ export default function Home() {
 						</div>
 						<div className="p-4 py-10 border-zinc-300  shadow-md bg-gradient-to-b rounded-md from-zinc-50 to-zinc-200 border">
 							<div>
-								<ClipboardIcon className="h-16 w-16 mx-auto" />
+								<ClockIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Flexible Services</h4>
 								<p className="text-zinc-600 mt-6 text-center">
 									Change can be intimidating, but it doesn&apos;t have to be. We offer
@@ -134,15 +119,6 @@ export default function Home() {
 					<h3 className="text-center text-3xl font-bold text-white ">Client Testimonials</h3>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
 						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
-							{/* <div className="shrink-0 hidden md:block">
-								<Image
-									src="/mendy.png"
-									alt="Mendelson"
-									width={100}
-									height={100}
-									className=" rounded-lg shadow-md hidden md:block h-40 w-32 object-center object-cover"
-								/>
-							</div> */}
 							<div>
 								<p className="text-white/70 md:text-base">
 									&quot;Dawn Fitness has truly changed my life. Previously, I struggled with
@@ -171,15 +147,6 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
-							{/* <div className="shrink-0 hidden md:block">
-								<Image
-									src="/client1.jpg"
-									alt="Chris"
-									width={100}
-									height={100}
-									className=" rounded-lg shadow-md hidden md:block h-40 w-32 object-center object-cover"
-								/>
-							</div> */}
 							<div>
 								<p className="text-white/70 md:text-base">
 									&quot;I associate customer service with his brand... Like Gucci! They have
@@ -264,6 +231,27 @@ export default function Home() {
 									/>
 								</svg>
 							</a>
+							<a
+								href="https://twitter.com/dawnfitlife"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<svg
+									className=" text-black dark:text-white"
+									width="28px"
+									height="28px"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M22 5.9c-.7.3-1.5.5-2.4.6a4 4 0 0 0 1.8-2.2c-.8.5-1.6.8-2.6 1a4.1 4.1 0 0 0-6.7 1.2 4 4 0 0 0-.2 2.5 11.7 11.7 0 0 1-8.5-4.3 4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5a4 4 0 0 0 3.3 4 4.2 4.2 0 0 1-1.9.1 4.1 4.1 0 0 0 3.9 2.8c-1.8 1.3-4 2-6.1 1.7a11.7 11.7 0 0 0 10.7 1A11.5 11.5 0 0 0 20 8.5V8a10 10 0 0 0 2-2.1Z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -321,6 +309,26 @@ function DumbbellIcon({ className = "" }: IconProps) {
 			<path d="m2 6 4-4" />
 			<path d="m3 10 7-7" />
 			<path d="m14 21 7-7" />
+		</svg>
+	);
+}
+
+function ClockIcon({ className = "w-6 h-6 text-gray-800 dark:text-white" }: IconProps) {
+	return (
+		<svg
+			className={className}
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+		>
+			<path
+				stroke="currentColor"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+			/>
 		</svg>
 	);
 }
