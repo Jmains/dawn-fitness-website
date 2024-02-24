@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 
-const fontSans = FontSans({
+const inter = Inter({
 	subsets: ["latin"],
 	variable: "--font-sans",
 });
@@ -51,7 +51,7 @@ export default function RootLayout({
 			<Script
 				src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY}`}
 			/>
-			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+			<body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
 				<Navbar />
 				{children}
 				<Toaster />
