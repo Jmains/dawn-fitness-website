@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import { Toaster } from "@/components/ui/toaster";
+import { Navbar } from "@/components/ui/navbar";
+import { Footer } from "@/components/ui/footer";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -50,8 +52,10 @@ export default function RootLayout({
 				src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY}`}
 			/>
 			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+				<Navbar />
 				{children}
 				<Toaster />
+				<Footer />
 			</body>
 			<GoogleAnalytics gaId="G-L424822YQS" />
 		</html>
