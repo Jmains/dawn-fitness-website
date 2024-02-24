@@ -25,9 +25,9 @@ export default function MeetTheTeam() {
 							Brandon is a Fitness Coach who has been training for over a decade. He has lost
 							120 lbs. himself and has used that experience to help over a hundred clients
 							lose/gain weight, build muscle, get stronger, and develop healthy habits that
-							result in lifelong transformations. Brandon's passion for changing lives is what
-							led him to found Dawn Fitness with the ambition to help impact as many lives as
-							possible!
+							result in lifelong transformations. Brandon&apos;s passion for changing lives is
+							what led him to found Dawn Fitness with the ambition to help impact as many lives
+							as possible!
 						</p>
 					</div>
 				</div>
