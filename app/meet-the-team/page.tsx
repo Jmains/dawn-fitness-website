@@ -12,6 +12,7 @@ export default function MeetTheTeam() {
 							className="object-cover object-center rounded-full mx-auto md:m-0 shadow-lg w-64 h-64  bg-white sm:rounded-md md:w-[150rem] md:h-96"
 							height={256}
 							width={700}
+							loading="eager"
 							alt="Brandon Nayebi"
 						/>
 					</div>
