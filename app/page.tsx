@@ -102,7 +102,7 @@ export default function Home() {
 						Client Testimonials
 					</h3>
 
-					<div className="px-14 md:px-20">
+					<div className="px-11 md:px-20">
 						<Testimonials />
 					</div>
 					{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
