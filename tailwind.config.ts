@@ -21,6 +21,7 @@ const config = {
 		extend: {
 			objectPosition: {
 				vid: "50% 19%;",
+				chevy: "50% 19%",
 			},
 			backgroundImage: {
 				"contact-form":
@@ -28,6 +29,7 @@ const config = {
 			},
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
+				bebas: "var(--font-bebas)",
 			},
 			colors: {
 				border: "hsl(var(--border))",

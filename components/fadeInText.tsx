@@ -1,11 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import clsx from "clsx";
 
-export const FadeInText = ({ word, delay }: { word: string; delay: number }) => {
+export const FadeInText = ({
+	word,
+	delay,
+	className = "",
+}: {
+	word: string;
+	delay: number;
+	className?: string;
+}) => {
 	return (
 		<motion.span
-			className=""
+			className={clsx(className)}
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{

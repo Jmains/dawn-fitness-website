@@ -1,16 +1,20 @@
 import { FadeInText } from "@/components/fadeInText";
+import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ui/forms/contact-form";
+import { bebasFont } from "@/fonts";
+import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	return (
 		<main>
 			<section className="grid grid-cols-1 md:grid-cols-2 pt-[4.83rem] gap-y-12 max-w-7xl mx-auto">
-				<div className="pt-12 md:pt-20 px-4">
-					<h1 className="font-bold text-4xl md:text-5xl grid gap-2 md:gap-4">
-						<FadeInText word="New Dawn." delay={5} />
-						<FadeInText word="New Beginning." delay={13} />
-						<FadeInText word="New you." delay={20} />
+				<div className="pt-16 md:py-20 md:pt-12 px-4">
+					<h1 className="font-bold text-6xl md:text-7xl grid gap-2 md:gap-4">
+						<FadeInText className={bebasFont.className} word="New Dawn." delay={5} />
+						<FadeInText className={bebasFont.className} word="New Beginning." delay={13} />
+						<FadeInText className={bebasFont.className} word="New you." delay={20} />
 					</h1>
 					<h2 className="mt-12 text-zinc-700 max-w-lg">
 						<strong>Dawn</strong> is a fit-lifestyle company that coaches individuals on how to
@@ -20,6 +24,12 @@ export default function Home() {
 						—available both in person and online—allowing you to transform your life on{" "}
 						<strong>your own terms</strong>.
 					</h2>
+					<Link
+						href={"/#contact"}
+						className="mt-10 px-6 border border-neutral-400 hover:bg-black/75 shadow-md py-2 text-left bg-black/95 inline-block text-white rounded-md"
+					>
+						Start your fitness journey today!
+					</Link>
 				</div>
 				<div className="">
 					<video
@@ -29,7 +39,7 @@ export default function Home() {
 						playsInline={true}
 						id="dawnFitVideo"
 						controls={false}
-						className="h-[80vh] w-full object-cover object-vid max-h-[36rem]"
+						className="h-[85vh] w-full object-cover object-vid max-h-[40rem] md:max-h-none md:h-full lg:h-[85vh] lg:max-h-[55rem]"
 					>
 						<source src="headerVid.mp4" type="video/mp4" />
 					</video>
@@ -37,7 +47,9 @@ export default function Home() {
 			</section>
 			<section id="services" className="bg-zinc-50 scroll-m-20">
 				<div className="px-4 py-10 md:py-20 max-w-7xl mx-auto">
-					<h3 className="text-center font-bold text-3xl md:text-4xl">Services</h3>
+					<h3 className={clsx("text-center font-bold text-4xl md:text-5xl", bebasFont.className)}>
+						Services
+					</h3>
 					<div className="grid gap-8 md:grid-cols-3 mt-8">
 						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
 							<div>
@@ -79,8 +91,15 @@ export default function Home() {
 				</div>
 			</section>
 			<section id="testimonials" className="bg-zinc-900 scroll-m-20">
-				<div className="px-4 py-16 max-w-7xl mx-auto">
-					<h3 className="text-center text-3xl font-bold text-white ">Client Testimonials</h3>
+				<div className="px-4 py-16 md:py-24 max-w-7xl mx-auto">
+					<h3
+						className={clsx(
+							"text-center text-4xl font-bold text-white md:text-5xl",
+							bebasFont.className
+						)}
+					>
+						Client Testimonials
+					</h3>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
 						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
 							<div>
@@ -140,7 +159,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* <section className="px-4 py-10 ">
-				<h3 className="text-center font-bold text-3xl md:text-4xl">Meet The Team</h3>
+				<h3 className="text-center font-bold text-3xl md:text-5xl">Meet The Team</h3>
 				<div className="mt-10">
 					<h4 className="text-center font-semibold text-2xl md:text-3xl text-neutral-500">
 						Our Coaches
@@ -159,9 +178,11 @@ export default function Home() {
 					</div>
 				</div>
 			</section> */}
-			<section className="px-4 py-10 bg-zinc-100">
+			<section className="px-4 py-10 md:py-24 bg-zinc-100">
 				<div id="contact" className="text-4xl font-bold mx-auto scroll-m-32">
-					<h3 className="text-center font-bold text-3xl md:text-4xl">Let&apos;s Get In Touch!</h3>
+					<h3 className={clsx("text-center font-bold text-4xl md:text-5xl", bebasFont.className)}>
+						Let&apos;s Get In Touch!
+					</h3>
 					<ContactForm className="max-w-lg mx-auto mt-10" />
 				</div>
 			</section>
