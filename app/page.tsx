@@ -1,10 +1,9 @@
 import { FadeInText } from "@/components/fadeInText";
-import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ui/forms/contact-form";
 import { bebasFont } from "@/fonts";
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
+import { Testimonials } from "@/components/ui/Testimonials";
 
 export default function Home() {
 	return (
@@ -102,7 +101,11 @@ export default function Home() {
 					>
 						Client Testimonials
 					</h3>
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
+
+					<div className="px-14 md:px-20">
+						<Testimonials />
+					</div>
+					{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
 						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
 							<div>
 								<p className="text-white/70 md:text-base">
@@ -157,7 +160,7 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</section>
 			{/* <section className="px-4 py-10 ">
