@@ -79,7 +79,9 @@ export default function Home() {
 						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
 							<div>
 								<ClockIcon className="h-16 w-16 mx-auto" />
-								<h4 className="text-center font-semibold text-xl mt-5">Flexible Services</h4>
+								<h4 className="text-center font-semibold text-xl mt-5">
+									Flexible Scheduling
+								</h4>
 								<p className="text-zinc-600 mt-6 text-center">
 									Change can be intimidating, but it doesn&apos;t have to be. We offer
 									coaching both in-person and virtually to accommodate all lifestyles and
