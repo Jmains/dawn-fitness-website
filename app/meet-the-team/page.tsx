@@ -1,3 +1,4 @@
+import { Instagram } from "@/components/ui/icons/instagram";
 import { bebasFont } from "@/fonts";
 import clsx from "clsx";
 import Image from "next/image";
@@ -22,6 +23,7 @@ export default function MeetTheTeam() {
 							width={700}
 							loading="eager"
 							alt="Brandon Nayebi"
+							priority
 						/>
 					</div>
 					<div className="md:col-span-2">
@@ -33,14 +35,21 @@ export default function MeetTheTeam() {
 						>
 							Brandon Nayebi
 						</h2>
-						<h3
-							className={clsx(
-								"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left",
-								bebasFont.className
-							)}
-						>
-							Head Coach
-						</h3>
+						<div className="flex items-center justify-center md:justify-start gap-4">
+							<h3
+								className={clsx(
+									"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left mt-0.5",
+									bebasFont.className
+								)}
+							>
+								Head Coach
+							</h3>
+							<div>
+								<a href="https://www.instagram.com/bbno_fit/">
+									<Instagram className="h-[1rem] w-[1rem] md:h-[1.25rem] md:w-[1.25rem]" />
+								</a>
+							</div>
+						</div>
 
 						<p className="mt-8 text-black/60">
 							Brandon is a Fitness Coach who has been training for over a decade. He has lost
@@ -72,14 +81,21 @@ export default function MeetTheTeam() {
 						>
 							Jackson Main
 						</h2>
-						<h3
-							className={clsx(
-								"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left",
-								bebasFont.className
-							)}
-						>
-							Coach
-						</h3>
+						<div className="flex items-center justify-center md:justify-start gap-4">
+							<h3
+								className={clsx(
+									"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left mt-0.5",
+									bebasFont.className
+								)}
+							>
+								Coach
+							</h3>
+							<div>
+								<a href="https://www.instagram.com/jermain_18/">
+									<Instagram className="h-[1rem] w-[1rem] md:h-[1.25rem] md:w-[1.25rem]" />
+								</a>
+							</div>
+						</div>
 						{/* <hr className="h-[0.1rem] bg-neutral-300 mt-4" /> */}
 						<p className="mt-8 text-black/60">
 							Jackson is a Fitness Coach who has a lifetime of experience in athletics, having
@@ -114,14 +130,21 @@ export default function MeetTheTeam() {
 						>
 							Alonso Carranza
 						</h2>
-						<h3
-							className={clsx(
-								"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left",
-								bebasFont.className
-							)}
-						>
-							Dawn Athlete
-						</h3>
+						<div className="flex items-center justify-center md:justify-start gap-4">
+							<h3
+								className={clsx(
+									"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left mt-0.5",
+									bebasFont.className
+								)}
+							>
+								Dawn Athlete
+							</h3>
+							<div>
+								<a href="https://www.instagram.com/zostetic/">
+									<Instagram className="h-[1rem] w-[1rem] md:h-[1.25rem] md:w-[1.25rem]" />
+								</a>
+							</div>
+						</div>
 						{/* <hr className="h-[0.1rem] bg-neutral-300 mt-4" /> */}
 						<p className="mt-8 text-black/60">
 							Alonso has been training for 5 years now, all self-taught before joining team
@@ -153,14 +176,21 @@ export default function MeetTheTeam() {
 						>
 							Trevor Albert
 						</h2>
-						<h3
-							className={clsx(
-								"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left",
-								bebasFont.className
-							)}
-						>
-							Dawn Athlete
-						</h3>
+						<div className="flex items-center justify-center md:justify-start gap-4">
+							<h3
+								className={clsx(
+									"text-center text-black/65 font-semibold text-lg md:text-xl md:text-left mt-0.5",
+									bebasFont.className
+								)}
+							>
+								Dawn Athlete
+							</h3>
+							<div>
+								<a target="_blank" href="https://www.instagram.com/tja.fit/">
+									<Instagram className="h-[1rem] w-[1rem] md:h-[1.25rem] md:w-[1.25rem]" />
+								</a>
+							</div>
+						</div>
 						<p className="mt-8 text-black/60">
 							Trevor has had a long history with fitness, having practiced many different types
 							of training from bodybuilding and crossfit to olympic lifting and even
