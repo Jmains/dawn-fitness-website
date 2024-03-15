@@ -45,12 +45,12 @@ export default function Home() {
 				</div>
 			</section>
 			<section id="services" className="bg-zinc-50 scroll-m-20">
-				<div className="px-4 py-10 md:py-20 max-w-7xl mx-auto">
+				<div className="px-4 py-10 md:py-24 max-w-7xl mx-auto">
 					<h3 className={clsx("text-center font-bold text-4xl md:text-5xl", bebasFont.className)}>
 						Services
 					</h3>
-					<div className="grid gap-8 md:grid-cols-3 mt-8">
-						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
+					<div className="grid gap-8 md:grid-cols-3 mt-8 md:mt-12">
+						<div className="p-4 py-10 border-zinc-300 shadow-md rounded-md bg-zinc-100 sm:transfrom sm:hover:scale-105 sm:duration-300 sm:transition-transform sm:ease-in-out">
 							<div>
 								<ClipboardIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Personalized Plans</h4>
@@ -61,7 +61,7 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
+						<div className="p-4 py-10 border-zinc-300 shadow-md rounded-md bg-zinc-100 sm:transfrom sm:hover:scale-105 sm:duration-300 sm:transition-transform sm:ease-in-out">
 							<div>
 								<DumbbellIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">
@@ -75,7 +75,7 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 ">
+						<div className="p-4 py-10 border-zinc-300  shadow-md rounded-md bg-zinc-100 sm:transfrom sm:hover:scale-105 sm:duration-300 sm:transition-transform sm:ease-in-out">
 							<div>
 								<ClockIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">

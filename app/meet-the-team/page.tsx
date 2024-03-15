@@ -11,9 +11,10 @@ export default function MeetTheTeam() {
 					Meet The Team
 				</h3>
 				<hr className="h-[0.1rem] bg-neutral-300 mt-6 md:mt-12" />
-				<h4 className="font-bold text-neutral-800 text-3xl text-center md:text-left md:text-5xl mt-12 lg:mt-20">
+				<h4 className="font-bold text-neutral-800 text-3xl text-center md:text-left tracking-tight md:text-5xl mt-12 lg:mt-20">
 					Coaches
 				</h4>
+
 				<div className="md:grid grid-cols-3 gap-10 mt-20">
 					<div className="md:col-span-1">
 						<Image
@@ -107,7 +108,7 @@ export default function MeetTheTeam() {
 					</div>
 				</div>
 				<hr className="h-[0.1rem] bg-neutral-300 mt-24" />
-				<h4 className="font-bold text-neutral-800 text-3xl md:text-5xl mt-14 lg:mt-20 text-center md:text-left">
+				<h4 className="font-bold text-neutral-800 text-3xl tracking-tight md:text-5xl mt-14 lg:mt-20 text-center md:text-left">
 					Athletes
 				</h4>
 				<div className="md:grid grid-cols-3 gap-10 mt-20">
