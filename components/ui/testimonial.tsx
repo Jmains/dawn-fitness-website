@@ -7,10 +7,9 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import AutoScroll from "embla-carousel-auto-scroll";
 
-export function Testimonials() {
+export function Testimonial() {
 	return (
 		<Carousel
 			opts={{

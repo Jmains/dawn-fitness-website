@@ -1,6 +1,6 @@
 import { FadeInText } from "@/components/fadeInText";
 import { ContactForm } from "@/components/ui/forms/contact-form";
-import { Testimonials } from "@/components/ui/testimonials";
+import { Testimonial } from "@/components/ui/testimonial";
 import { bebasFont } from "@/fonts";
 import clsx from "clsx";
 import Link from "next/link";
@@ -103,7 +103,7 @@ export default function Home() {
 					</h3>
 
 					<div className="px-4 md:px-4">
-						<Testimonials />
+						<Testimonial />
 					</div>
 				</div>
 			</section>
