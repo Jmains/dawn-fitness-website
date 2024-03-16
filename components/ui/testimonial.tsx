@@ -68,17 +68,18 @@ export function Testimonial() {
 				<CarouselItem className="pl-4 max-w-3xl">
 					<div className="bg-zinc-800/40 rounded-lg border border-zinc-600 p-4 md:p-8">
 						<p className="text-white/70 md:text-base">
-							&quot;I associate customer service with his brand... Like Gucci! They have some of
-							the most incredible customer service, very hands on. Whenever you&apos;re in
-							there, they cater to what you need. Brandon&apos;s that kind of guy. He&apos;ll
-							try to figure out your strengths and weaknesses and build a plan for you, test,
-							and ask what you like. Very similar to Gucci and it speaks volumes. You don&apos;t
-							get that anywhere else.&quot;
+							&quot;My workouts with my coach throughout the week are like therapy for me. I get
+							to talk about what is going on in my personal life and at work and we use the gym
+							as a way to channel all the frustrations I have. It&apos;s more than just fitness
+							advice, my coach helps me prioritize all of my goals in life and actually checks
+							in with me to make sure I am making the progress I want to. I appreciate that he
+							always remembers what we talked about and keeps me motivated and excited
+							throughout my week!&quot;
 						</p>
 						<div className="flex items-center gap-4 mt-10 md:mt-4">
 							<div>
-								<p className="font-semibold text-white">Chris, 37</p>
-								<p className="text-white text-sm">Client for 11 months</p>
+								<p className="font-semibold text-white">Dewayne, 31</p>
+								<p className="text-white text-sm">Client for 25 months</p>
 							</div>
 						</div>
 					</div>

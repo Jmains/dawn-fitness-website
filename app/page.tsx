@@ -115,6 +115,15 @@ export default function Home() {
 					<ContactForm className="max-w-lg mx-auto mt-10" />
 				</div>
 			</section>
+			{/* <section className="px-4 py-10 md:py-24 bg-black text-white">
+				<div id="faq" className="text-4xl font-bold mx-auto scroll-m-32">
+					<h3 className={clsx("text-center font-bold text-4xl md:text-5xl", bebasFont.className)}>
+						FAQ
+					</h3>
+					<div>Do I need to have gym access or fitness equipment to work with you?</div>
+					<div>Who is this coaching program for?</div>
+				</div>
+			</section> */}
 		</main>
 	);
 }
