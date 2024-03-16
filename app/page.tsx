@@ -1,9 +1,9 @@
 import { FadeInText } from "@/components/fadeInText";
 import { ContactForm } from "@/components/ui/forms/contact-form";
+import { Testimonials } from "@/components/ui/testimonials";
 import { bebasFont } from "@/fonts";
 import clsx from "clsx";
 import Link from "next/link";
-import { Testimonials } from "@/components/ui/testimonials";
 
 export default function Home() {
 	return (
