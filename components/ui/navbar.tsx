@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export function Navbar() {
 	const [showMenu, setShowMenu] = useState(false);

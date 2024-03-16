@@ -3,14 +3,14 @@ import { ContactForm } from "@/components/ui/forms/contact-form";
 import { bebasFont } from "@/fonts";
 import clsx from "clsx";
 import Link from "next/link";
-import { Testimonials } from "@/components/ui/Testimonials";
+import { Testimonials } from "@/components/ui/testimonials";
 
 export default function Home() {
 	return (
 		<main>
 			<section className="grid grid-cols-1 md:grid-cols-2 pt-[4.83rem] gap-y-12 max-w-7xl mx-auto">
 				<div className="pt-16 md:py-20 md:pt-12 px-4">
-					<h1 className="font-bold text-6xl md:text-7xl grid gap-2 md:gap-4">
+					<h1 className="font-bold text-6xl md:text-7xl grid gap-3 md:gap-4">
 						<FadeInText className={bebasFont.className} word="New Dawn." delay={5} />
 						<FadeInText className={bebasFont.className} word="New Beginning." delay={13} />
 						<FadeInText className={bebasFont.className} word="New you." delay={20} />
@@ -25,7 +25,7 @@ export default function Home() {
 					</h2>
 					<Link
 						href={"/#contact"}
-						className="mt-10 px-6 border border-neutral-400 hover:bg-black/75 shadow-md py-2 text-left bg-black/95 inline-block text-white rounded-md"
+						className="mt-10 px-6 hover:bg-black/75 shadow-md py-2 text-left bg-black/95 inline-block text-white rounded-md"
 					>
 						Start your fitness journey today!
 					</Link>
@@ -51,10 +51,10 @@ export default function Home() {
 					</h3>
 					<div className="grid gap-8 md:grid-cols-3 mt-8 md:mt-12">
 						<div className="p-4 py-10 border-zinc-300 shadow-md rounded-md bg-zinc-100 sm:transfrom sm:hover:scale-105 sm:duration-300 sm:transition-transform sm:ease-in-out">
-							<div>
+							<div className="">
 								<ClipboardIcon className="h-16 w-16 mx-auto" />
 								<h4 className="text-center font-semibold text-xl mt-5">Personalized Plans</h4>
-								<p className="text-zinc-600 mt-6 text-center">
+								<p className=" mt-6 text-center text-zinc-600">
 									Workouts, diet plans, and lifestyle goal setting are all uniquely tailored
 									and delivered to you either in-person with one of our expert coaches or
 									online through our app.
@@ -102,87 +102,11 @@ export default function Home() {
 						Client Testimonials
 					</h3>
 
-					<div className="px-11 md:px-20">
+					<div className="px-4 md:px-4">
 						<Testimonials />
 					</div>
-					{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-16 lg:gap-x-32">
-						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
-							<div>
-								<p className="text-white/70 md:text-base">
-									&quot;Dawn Fitness has truly changed my life. Previously, I struggled with
-									wearing better clothes, often feeling that it wouldn&apos;t make a
-									difference or that sloppy attire was acceptable. However, upon starting my
-									training, I felt a renewed sense of vitality that had been missing for the
-									past two years. I began to socialize more, my confidence soared, and I
-									transitioned from wearing extra-large to large clothing sizes. With the
-									guidance and encouragement from Dawn Fitness and Brandon, I&apos;ve been
-									empowered to sculpt the person I aspire to become. Thank you, Dawn
-									Fitness!.&quot;
-								</p>
-								<div className="flex items-center gap-4 mt-10 md:mt-4">
-									<Image
-										width={24}
-										height={24}
-										src="/mendy.png"
-										alt="Mendelson"
-										className="shrink-0 rounded-full object-center object-cover shadow-md w-10 h-10 md:w-12 md:h-12"
-									/>
-									<div>
-										<p className="font-semibold text-white">Mendelson, 25</p>
-										<p className="text-white text-sm">Client for 18 months</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="flex gap-8 max-w-3xl mx-auto mt-16">
-							<div>
-								<p className="text-white/70 md:text-base">
-									&quot;I associate customer service with his brand... Like Gucci! They have
-									some of the most incredible customer service, very hands on. Whenever
-									you&apos;re in there, they cater to what you need. Brandon&apos;s that
-									kind of guy. He&apos;ll try to figure out your strengths and weaknesses
-									and build a plan for you, test, and ask what you like. Very similar to
-									Gucci and it speaks volumes. You don&apos;t get that anywhere else.&quot;
-								</p>
-
-								<div className="flex items-center gap-4 mt-10 md:mt-4">
-									<Image
-										width={24}
-										height={24}
-										src="/client1.jpg"
-										alt="Chris"
-										className="shrink-0 rounded-full object-center object-cover shadow-md w-10 h-10 md:w-12 md:h-12"
-									/>
-									<div>
-										<p className="font-semibold text-white">Chris, 37</p>
-										<p className="text-white text-sm">Client for 11 months</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> */}
 				</div>
 			</section>
-			{/* <section className="px-4 py-10 ">
-				<h3 className="text-center font-bold text-3xl md:text-5xl">Meet The Team</h3>
-				<div className="mt-10">
-					<h4 className="text-center font-semibold text-2xl md:text-3xl text-neutral-500">
-						Our Coaches
-					</h4>
-					<div>
-						<div className="h-20 w-20 bg-black shadow-md rounded-full mx-auto"></div>
-						<h5 className="text-center font-bold">Brandon Neyebi</h5>
-						<h6 className="text-center">Head Coach</h6>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corrupti est
-							illo facere officiis a. Temporibus rerum, id velit sunt illo officiis, delectus
-							veniam repellat perspiciatis, numquam consequatur nesciunt molestiae. Doloribus
-							reprehenderit labore inventore vero atque eum modi pariatur ducimus eius? Fugiat
-							laborum saepe dolorem voluptatibus mollitia magnam sequi, placeat odio!
-						</p>
-					</div>
-				</div>
-			</section> */}
 			<section className="px-4 py-10 md:py-24 bg-zinc-100">
 				<div id="contact" className="text-4xl font-bold mx-auto scroll-m-32">
 					<h3 className={clsx("text-center font-bold text-4xl md:text-5xl", bebasFont.className)}>

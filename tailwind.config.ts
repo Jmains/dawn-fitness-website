@@ -26,6 +26,8 @@ const config = {
 			backgroundImage: {
 				"contact-form":
 					"linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/cForm.jpg')",
+				services1:
+					"linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/test1.jpg')",
 			},
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
