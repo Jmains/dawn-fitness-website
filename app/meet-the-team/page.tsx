@@ -14,8 +14,13 @@ export default function MeetTheTeam() {
 				<h4 className="font-bold text-neutral-800 text-3xl text-center md:text-left tracking-tight md:text-5xl mt-12 lg:mt-20">
 					Coaches
 				</h4>
+				<p className="mt-6 text-xl text-black/70">
+					Our Coaches boast years of experience in both online and virtual training. Having
+					successfully guided numerous clients towards achieving their goals, they lead by example,
+					embodying the principles they teach. Explore more about them below!
+				</p>
 
-				<div className="md:grid grid-cols-3 gap-10 mt-20">
+				<div className="md:grid grid-cols-3 gap-10 mt-20 relative">
 					<div className="md:col-span-1">
 						<Image
 							src="/brandon.jpg"
@@ -52,7 +57,7 @@ export default function MeetTheTeam() {
 							</div>
 						</div>
 
-						<p className="mt-8 text-black/60">
+						<p className="mt-8 text-black/70">
 							Brandon is a Fitness Coach who has been training for over a decade. He has lost
 							120 lbs. himself and has used that experience to help over a hundred clients
 							lose/gain weight, build muscle, get stronger, and develop healthy habits that
@@ -62,7 +67,10 @@ export default function MeetTheTeam() {
 						</p>
 					</div>
 				</div>
-				<div className="md:grid grid-cols-3 gap-10 mt-20">
+				<div className="flex items-center justify-center md:justify-start my-16">
+					<hr className="h-[0.05rem] bg-neutral-300 w-44 md:w-72" />
+				</div>
+				<div className="md:grid grid-cols-3 gap-10 mt-20 athlete">
 					<div className="md:col-span-1">
 						<Image
 							src="/jackson.jpg"
@@ -98,7 +106,7 @@ export default function MeetTheTeam() {
 							</div>
 						</div>
 						{/* <hr className="h-[0.1rem] bg-neutral-300 mt-4" /> */}
-						<p className="mt-8 text-black/60">
+						<p className="mt-8 text-black/70">
 							Jackson is a Fitness Coach who has a lifetime of experience in athletics, having
 							played a variety of sports from an early age into adulthood. He specializes in
 							strength and conditioning, with a focus on HIIT-style training. Jackson loves to
@@ -111,6 +119,12 @@ export default function MeetTheTeam() {
 				<h4 className="font-bold text-neutral-800 text-3xl tracking-tight md:text-5xl mt-14 lg:mt-20 text-center md:text-left">
 					Athletes
 				</h4>
+				<p className="mt-6 text-xl text-black/70">
+					Meet our sponsored Dawn Athletes who have embraced the lessons we teach at Dawn Fitness
+					and translated them into their own journeys. Explore their stories to gain insights and
+					inspiration!
+				</p>
+
 				<div className="md:grid grid-cols-3 gap-10 mt-20">
 					<div className="md:col-span-1">
 						<Image
@@ -147,7 +161,7 @@ export default function MeetTheTeam() {
 							</div>
 						</div>
 						{/* <hr className="h-[0.1rem] bg-neutral-300 mt-4" /> */}
-						<p className="mt-8 text-black/60">
+						<p className="mt-8 text-black/70">
 							Alonso has been training for 5 years now, all self-taught before joining team
 							Dawn. Growing up he would always tell his mom about his aspirations to be like
 							“the buff guys on T.V.” so when he turned 17 and could join a gym he went in and
@@ -156,6 +170,9 @@ export default function MeetTheTeam() {
 							successful in his fitness journey.
 						</p>
 					</div>
+				</div>
+				<div className="flex items-center justify-center md:justify-start my-16">
+					<hr className="h-[0.05rem] bg-neutral-300 w-44 md:w-72" />
 				</div>
 				<div className="md:grid grid-cols-3 gap-10 mt-20">
 					<div className="md:col-span-1">
@@ -192,7 +209,7 @@ export default function MeetTheTeam() {
 								</a>
 							</div>
 						</div>
-						<p className="mt-8 text-black/60">
+						<p className="mt-8 text-black/70">
 							Trevor has had a long history with fitness, having practiced many different types
 							of training from bodybuilding and crossfit to olympic lifting and even
 							long-distance running. Currently, he has been gravitating towards strength and
