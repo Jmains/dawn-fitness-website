@@ -39,6 +39,15 @@ const teammates = [
 			"Trevor has had a long history with fitness, having practiced many different types of training from bodybuilding and crossfit to olympic lifting and even long-distance running. Currently, he has been gravitating towards strength and conditioning. He is currently pursuing his CSCS so that he can work with other athletes and help take them to the next level.",
 		priority: false,
 	},
+	{
+		name: "Dayton Ames",
+		position: "Dawn Athlete",
+		imgSrc: "/dayton.jpg",
+		instaUrl: "https://www.instagram.com/amesdayton/",
+		description:
+			"Dayton has been involved in competitive sports since childhood, exposing him to a diverse range of workout programs. Currently, Dayton aspires to become a professional Mixed Martial Artist, competing in the Fury Fighting Championships promotion. His gym regimen extends beyond combat sports, emphasizing injury rehabilitation, improving functional movements, and developing explosive power and cardio.",
+		priority: false,
+	},
 ];
 
 export default function MeetTheTeam() {
@@ -76,6 +85,10 @@ export default function MeetTheTeam() {
 					<hr className="h-[0.05rem] bg-neutral-300 w-44 md:w-72" />
 				</div>
 				<TeamCard {...teammates[3]} />
+				<div className="flex items-center justify-center md:justify-start my-16">
+					<hr className="h-[0.05rem] bg-neutral-300 w-44 md:w-72" />
+				</div>
+				<TeamCard {...teammates[4]} />
 			</div>
 		</div>
 	);
