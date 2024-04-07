@@ -7,6 +7,7 @@ import Script from "next/script";
 import { Toaster } from "@/components/ui/toaster";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const dmSans = DM_Sans({
 	subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({
 			<body className={cn("min-h-screen bg-background font-sans antialiased", dmSans.className)}>
 				<Navbar />
 				{children}
+				<SpeedInsights />
 				<Toaster />
 				<Footer />
 			</body>
