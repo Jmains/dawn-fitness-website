@@ -15,6 +15,8 @@ const config = {
 			center: true,
 			padding: "2rem",
 			screens: {
+				"lg": "1024px",
+				"xl": "1280px",
 				"2xl": "1400px",
 			},
 		},
@@ -28,6 +30,8 @@ const config = {
 					"linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/cForm.jpg')",
 				services1:
 					"linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/test1.jpg')",
+				landing: "url('/bg.svg')",
+				services: "url('/bgWhite2.svg')",
 			},
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
@@ -66,7 +70,18 @@ const config = {
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
-				},
+				},gold: {
+					50: "hsl(40, 90%, 95%)",
+					100: "hsl(40, 90%, 90%)",
+					200: "hsl(40, 90%, 85%)",
+					300: "hsl(40, 90%, 80%)",
+					400: "hsl(40, 90%, 75%)", // #F8D386
+					500: "hsl(40, 85%, 65%)",
+					600: "hsl(40, 80%, 55%)",
+					700: "hsl(40, 75%, 45%)",
+					800: "hsl(40, 70%, 35%)",
+					900: "hsl(40, 65%, 25%)",
+				  },
 			},
 			borderRadius: {
 				lg: "var(--radius)",

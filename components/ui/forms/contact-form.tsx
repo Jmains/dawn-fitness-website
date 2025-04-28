@@ -84,7 +84,7 @@ export function ContactForm({ className = "" }: { className?: string }) {
 	return (
 		<Form {...form}>
 			<form className={className} onSubmit={form.handleSubmit(onSubmit)}>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-0 text-black font-normal">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-4 text-black font-normal">
 					<FormField
 						name="firstName"
 						control={form.control}
@@ -146,7 +146,7 @@ export function ContactForm({ className = "" }: { className?: string }) {
 						control={form.control}
 						render={({ field }) => (
 							<FormItem className="md:col-span-2">
-								<FormLabel>Tell me about your goals</FormLabel>
+								<FormLabel>Tell us about your goals</FormLabel>
 								<FormControl>
 									<Textarea id="goals" {...field} />
 								</FormControl>

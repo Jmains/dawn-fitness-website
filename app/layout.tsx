@@ -8,11 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const dmSans = DM_Sans({
-	subsets: ["latin"],
-	variable: "--font-sans",
-});
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
 	title: "Dawn Fitness",
@@ -42,22 +38,29 @@ export const metadata: Metadata = {
 	},
 };
 
+const dmSans = DM_Sans({
+	subsets: ["latin"],
+	// variable: "--font-sans",
+});
+
 export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<Script
 				src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY}`}
 			/>
-			<body className={cn("min-h-screen bg-background font-sans antialiased", dmSans.className)}>
-				<Navbar />
-				{children}
-				<SpeedInsights />
-				<Toaster />
-				<Footer />
+			<body className={cn("min-h-screen bg-background antialiased", dmSans.className)}>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+					{/* <Navbar /> */}
+					{children}
+					<SpeedInsights />
+					<Toaster />
+					{/* <Footer /> */}
+				</ThemeProvider>
 			</body>
 			<GoogleAnalytics gaId="G-L424822YQS" />
 		</html>
