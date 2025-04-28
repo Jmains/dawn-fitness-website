@@ -6,7 +6,7 @@ import Image from "next/image"
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-[80px] items-center justify-between">
+      <div className="container px-4  flex h-[80px] items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-xl">
             <Link href="/">
               <Image

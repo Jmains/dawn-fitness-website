@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 export function AppFeatureSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-card">
-      <div className="container md:px-6">
+      <div className="container px-4  md:px-6">
         <div className="grid gap-10 md:gap-16 lg:grid-cols-2">
           <div className="space-y-4">
             <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground">

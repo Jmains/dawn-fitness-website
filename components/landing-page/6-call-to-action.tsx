@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export function CallToActionSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-primary/10">
-      <div className="container md:px-6">
+      <div className="container px-4  md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
