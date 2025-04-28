@@ -26,7 +26,7 @@ export function TestimonialsSection() {
                 <Star className="h-5 w-5 fill-current text-primary" />
               </div>
               <p className="text-muted-foreground">
-                "The virtual training sessions changed my life. I've lost 50 pounds and feel better than ever."
+                &quot;The virtual training sessions changed my life. I&apos;ve lost 50 pounds and feel better than ever.&quot;
               </p>
             </div>
             <div className="flex items-center gap-4">
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
                 <Star className="h-5 w-5 fill-current text-primary" />
               </div>
               <p className="text-muted-foreground">
-                "The Dawn app keeps me accountable. The AI adjusts my workouts based on my progress."
+                &quot;The Dawn app keeps me accountable. The AI adjusts my workouts based on my progress.&quot;
               </p>
             </div>
             <div className="flex items-center gap-4">
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
                 <Star className="h-5 w-5 fill-current text-primary" />
               </div>
               <p className="text-muted-foreground">
-                "In-person training at Dawn is worth every penny. The trainers are world-class."
+                &quot;In-person training at Dawn is worth every penny. The trainers are world-class.&quot;
               </p>
             </div>
             <div className="flex items-center gap-4">
