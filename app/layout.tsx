@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 		siteName: "Dawn Fitness",
 		images: [
 			{
-				url: "https://dawn.fitness/DAWN_logo.png",
+				url: "https://dawn.fitness/logo-square.png",
 			},
 		],
 	},
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "https://dawn.fitness",
 		creator: "@creator",
-		images: "https://dawn.fitness/DAWN_logo.png",
+		images: "https://dawn.fitness/logo-square.png",
 		title: "Dawn Fitness",
 		description:
 			"New Dawn, New You. Dawn Fitness transforms lives through body recomposition, personal training, and lifestyle coaching for a holistic approach to health and well-being.",
